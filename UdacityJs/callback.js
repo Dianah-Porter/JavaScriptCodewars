@@ -1,18 +1,19 @@
-// function expression catSays
-var catSays = function(max) {
-  var catMessage = "";
-  for (var i = 0; i < max; i++) {
-    catMessage += "meow ";
-  }
-  return catMessage;
-};
-
-// function declaration helloCat accepting a callback
-function helloCat(callbackFunc) {
-  return "Hello " + callbackFunc(3);
+let checker = function name(age) {
+    if(age > 18) {
+        console.log("You're allowed to vote!");
+    } 
+    else{
+        console.log("You're not allowed to vote!");
+    }
 }
+function vote(ag, chk) {
+    chk(ag);  
+}
+vote(21, checker);
 
-// pass in catSays as a callback function
-helloCat(catSays);
+//callback function 
 
-console.log(catSays(4))
+function greet(name, callback) {
+  callback(name);
+}
+greet("Diana", (name) => console.log("Hello, " + name));
