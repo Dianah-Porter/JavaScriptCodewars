@@ -20,7 +20,7 @@ removeHighestOccurrence(['a', 'b', 'b', 'c', 'c', 'c', 'd']) // ['a', 'b', 'b', 
 removeHighestOccurrence([true, true, false, false, true]) // [false, false]
 
 4. Write a function reverseLongestWord that takes a sentence as an argument and returns the longest word in the sentence reversed and with the first character capitalized.
-reverseLongestWord("The question he had was meaningless") 
+reverseLongestWord("The question he had was meaningless")
 // "meaningless" => "Sselgninaem"
 
 
@@ -39,3 +39,29 @@ insertCharAfterWords("I love JavaScript programming", "#")
 
 insertCharAfterWords("Exploration of the cosmos is fascinating", "!")
 // "Exploration of the! cosmos is fascinating!"
+
+6. Create a function called capitalizeVowels that takes a string and returns the string with all the vowels at odd indexes capitalized
+capitalizeVowels("hello world") // "hEllo wOrld"
+
+capitalizeVowels("javascript is an awesome language") // "jAvAsCrIpt Is An AwEsOmE lAnguAgE"
+
+capitalizeVowels("programming can be fun and exciting") // "prOgrAmmIng cAn bE fUn And ExcItIng"
+
+capitalizeVowels("quick brown fox jumps over the lazy dog") // "quIck brOwn fOx jUmps OvEr thE lAzY dOg"
+
+capitalizeVowels("test with no changes") // "tEst wIth nO chAngEs"
+
+
+7. Create a function called largestSum that takes an array of numbers and returns the sum of the 3 largest numbers 
+largestSum([5, 2, 3, 1, 4]) // 12
+
+largestSum([10, 30, 5, 12, 3, 15]) // 55
+
+largestSum([7, 106, 12, 98, 54, 101]) // 265
+
+largestSum([20, -1, 10, -5, 30]) // 60
+
+largestSum([100, 50 12, 43]) // 150
+
+largestSum([5, 5, 5, 2, 1]) // 15
+
