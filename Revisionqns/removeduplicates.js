@@ -10,3 +10,7 @@ return new_arr;
     
 }
 console.log(removeDuplicates(['a', 'b', 'b', 'c', 'd', 'd', 'e']));
+
+/* let arr = [1,2,3,3,3,4];
+let newArr = [...new set(arr)];
+console.log(newArr); */
