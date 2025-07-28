@@ -2,6 +2,7 @@ function longestWord(sentence){
     const words = sentence.split(" ");   // the space in split(" ") matters!!!!!!!!!!!
     let longest = "";
     for(let word of words){
+        // console.log(word);
         if(word.length > longest.length ){
             longest = word;
         }

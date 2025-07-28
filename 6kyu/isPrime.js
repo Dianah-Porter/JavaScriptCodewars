@@ -1,14 +1,13 @@
-
-function isPrime(num) {
-  if (num === 1){
-    return false;
-  }
-  else  if(num % 1 === 0 && num % num === 0){
-    return true;
-  }
-  else{
-    return false;
+function isPrime(num){
+  if(num === 1 || num < 1) return false;
+  for(let i = 2; i <= Math.sqrt(num); i++){
+    if(num % i === 0){
+      return false;
+    }
+    else {
+      return true;
+    }
   }
 }
-console.log(isPrime(10));
+console.log(isPrime(11));
 
