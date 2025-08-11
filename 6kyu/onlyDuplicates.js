@@ -3,20 +3,20 @@ function onlyDuplicates(str) {
   let count = {};
   let splitted = str.split('');
   
+  
   for(let i of splitted){
     count[i] = (count[i] || 0) + 1;
+    console.log(i);
     
   }
-  let max =  0;
-  let duplicates;
-    for(let key in count){
-        if(count[key] > max){
-            max = count[key];
-            duplicates = toString(key);
 
-        }
-    }
+  let result = '';
+ for(let key of splitted){
+  if(count[key] > 1){
+    result += key;
+  }
+ }
 
-  return duplicates.split('').filter(num => num === max);
+  return result;
 } 
 console.log(onlyDuplicates("abccdefee")); //output: "cceee"
