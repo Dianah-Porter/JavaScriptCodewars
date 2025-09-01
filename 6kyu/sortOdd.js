@@ -4,4 +4,4 @@ function sortArray(array) {
   console.log(odds);
   return array.map(x => x % 2 !== 0 ? odds.shift() : x);
 }
-console.log(sortArray([ 1, 11, 2, 8, 3, 4, 5 ]))
+console.log(sortArray([ 1, 11, 2, 8, 3, 4, 5 ]));
