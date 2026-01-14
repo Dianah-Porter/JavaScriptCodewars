@@ -7,3 +7,5 @@ function incrementer(nums) {
   }
   return arr;
 }
+console.log(incrementer([1, 2, 3]));       // [2, 4, 6]
+console.log(incrementer([3, 6, 9, 8, 9])); // [4, 8, 2, 2, 4]
